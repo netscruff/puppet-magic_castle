@@ -52,3 +52,5 @@ profile::cvmfs::client::repositories:
   - cvmfs-config.computecanada.ca
   - soft.computecanada.ca
 profile::cvmfs::client::quota_limit: 4096
+
+profile::freeipa::mokey::version: 0.5.4
