@@ -54,3 +54,4 @@ profile::cvmfs::client::repositories:
 profile::cvmfs::client::quota_limit: 4096
 
 profile::freeipa::mokey::version: 0.5.4
+profile::freeipa::mokey::port: 12345
