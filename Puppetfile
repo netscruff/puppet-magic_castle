@@ -41,5 +41,5 @@ mod 'computecanada-jupyterhub',
     :ref => 'v3.7.2'
 
 mod 'puppet-teleport',
-    :git => 'https://github.com/jaxxstorm/puppet-teleport.git',
+    :git => 'https://github.com/netscruff/puppet-teleport.git',
     :ref => 'master'
