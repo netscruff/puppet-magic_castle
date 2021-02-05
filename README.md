@@ -121,3 +121,14 @@ variables for each profile.
 | `duo_unix::skey`                  | String | Duo secret key                                                                  | `''`                     |
 | `duo_unix::host`                  | String | Duo api host                                                                    | `''`                     |
 | `duo_unux::motd`                  | String | Enable motd                                                                     | `no`                     |
+
+## profile::teleport
+| Variable                              | Type                | Description                                                                 | Default  |
+| ------------------------------------- | :------------------ | :-------------------------------------------------------------------------- | -------- |
+| `profile::teleport`                   | Enum['true', 'false'] | Enable teleport daemon                                       | false                    |
+
+## teleport
+| Variable                          | Type   | Description                                                                     | Default                  |
+| --------------------------------- | :----- | :------------------------------------------------------------------------------ | ------------------------ |
+| `teleport::auth_token`            | String | Authentication token                                                            | `login`                  |
+| `teleport::auth_servers`          | String | Proxy server                                                                    | `''`                     |

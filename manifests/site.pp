@@ -7,6 +7,7 @@ node default {
   include profile::rsyslog::client
   include profile::freeipa::client
   include profile::metrics::exporter
+  include profile::teleport::base
 }
 
 node /^login\d+$/ {
