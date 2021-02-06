@@ -1,5 +1,5 @@
 class profile::teleport::login(
-  boolean $enable
+  Boolean $enable
 ){
 
   if $enable {
@@ -8,7 +8,7 @@ class profile::teleport::login(
 }
 
 class profile::teleport::mgmt(
-  boolean $enable
+  Boolean $enable
 ){
 
   if $enable {
@@ -17,7 +17,7 @@ class profile::teleport::mgmt(
 }
 
 class profile::teleport::node(
-  boolean $enable
+  Boolean $enable
 ){
 
   if $enable {
