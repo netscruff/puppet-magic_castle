@@ -84,4 +84,6 @@ profile::reverse_proxy::jupyterhub_subdomain: jupyter
 profile::reverse_proxy::ipa_subdomain: ipa
 profile::reverse_proxy::mokey_subdomain: mokey
 
-profile::teleport:enable: 'false'
+profile::teleport::login: false
+profile::teleport::mgmt: false
+profile::teleport::node: false

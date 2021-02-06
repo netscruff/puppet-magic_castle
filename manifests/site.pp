@@ -7,7 +7,6 @@ node default {
   include profile::rsyslog::client
   include profile::freeipa::client
   include profile::metrics::exporter
-  include profile::teleport::base
 }
 
 node /^login\d+$/ {
@@ -25,6 +24,7 @@ node /^login\d+$/ {
   include profile::nfs::client
   include profile::freeipa::client
   include profile::mfa::login
+  include profile::teleport::login
 }
 
 node /^mgmt1$/ {
@@ -43,6 +43,7 @@ node /^mgmt1$/ {
   include profile::slurm::accounting
   include profile::workshop::mgmt
   include profile::mfa::mgmt
+  include profile::teleport::mgmt
 
   include profile::accounts
   include profile::accounts::guests
@@ -56,6 +57,7 @@ node /^mgmt(?:[2-9]|[1-9]\d\d*)$/ {
   include profile::freeipa::client
   include profile::metrics::exporter
   include profile::mfa::mgmt
+  include profile::teleport::mgmt
 }
 
 node /^[a-z0-9-]*node\d+$/ {
@@ -72,5 +74,5 @@ node /^[a-z0-9-]*node\d+$/ {
   include profile::slurm::node
   include profile::freeipa::client
   include profile::mfa::node
-
+  include profile::teleport::node
 }
